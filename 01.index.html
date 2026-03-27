@@ -92,7 +92,7 @@
 <section class="bg-white flex flex-col md:flex-row px-6 py-8 md:py-16">
 
   <!-- LEFT (60%) -->
-  <div class="hidden md:block md:basis-3/5 border-r border-gray-200">
+  <div class="hidden md:block md:basis-3/5 border-r border-gray-200 pr-6">
     <img src="/information-main.jpg" class="w-full" />
 
     <h2 class="text-2xl font-bold mt-8 mb-4">
@@ -100,7 +100,7 @@
     </h2>
 
     <p class="text-gray-600">
-      "Curabitur Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo mollitia laudantium in optio repudiandae ipsam praesentium aut odit reiciendis velit, iusto voluptas. Eos perspiciatis at placeat, dignissimos non ratione porro quos, magnam quae, laboriosam aut est sed voluptatem optio totam qui quisquam eum fuga? Quidem corrupti maiores officiis adipisci."
+      Curabitur Lorem ipsum dolor sit amet consectetur adipisicing elit.
     </p>
 
     <p class="mt-6 font-semibold text-sm">
@@ -109,77 +109,156 @@
   </div>
 
   <!-- RIGHT (40%) -->
-<div class="md:basis-2/5 flex flex-col gap-16 md:gap-6 md:pl-6">
+  <div class="md:basis-2/5 flex flex-col gap-16 md:gap-6 md:pl-6">
 
-  <!-- card 1 -->
-  <div class="flex flex-col md:flex-row gap-4 bg-gray-200 p-4 items-stretch">
+    <!-- card 1 -->
+    <div class="flex flex-col md:flex-row gap-4 bg-gray-200 p-4 items-stretch">
+      <div class="md:basis-[35%]">
+        <img src="/information-orientation-mobile.jpg" class="md:hidden w-full mb-4">
+        <img src="/information-orientation.jpg" class="hidden md:block w-full h-full object-cover">
+      </div>
 
-    <div class="md:basis-[35%]">
-      <img src="/information-orientation-mobile.jpg"
-           class="md:hidden w-full mb-4">
-      <img src="/information-orientation.jpg"
-           class="hidden md:block w-full h-full object-cover">
+      <div class="md:basis-[65%]">
+        <h3 class="font-bold text-lg md:text-xl text-gray-800 mb-2">
+          Orientation date
+        </h3>
+        <p class="text-base text-gray-600 mb-2">
+          Tue 10/11 & Wed 10/12: 8am-3pm
+        </p>
+        <a href="#" class="text-blue-600 text-sm font-medium">
+          Read more
+        </a>
+      </div>
     </div>
 
-    <div class="md:basis-[65%]">
-     <h3 class="font-bold text-lg md:text-xl text-gray-800 mb-2">
-    Orientation date</h3>
-      <p class="text-base text-gray-600 mb-2">
-    Tue 10/11 & Wed 10/12: 8am-3pm
-  </p>
+    <!-- card 2 -->
+    <div class="flex flex-col md:flex-row gap-4 bg-gray-200 p-4 items-stretch">
+      <div class="md:basis-[35%]">
+        <img src="/information-campus-mobile.jpg" class="md:hidden w-full mb-4">
+        <img src="/information-campus.jpg" class="hidden md:block w-full h-full object-cover">
+      </div>
 
-  <a href="#" class="text-blue-600 text-sm font-medium">
-    Read more
-  </a>
+      <div class="md:basis-[65%]">
+        <h3 class="font-bold text-lg md:text-xl text-gray-800 mb-2">
+          Our campus
+        </h3>
+        <p class="text-base text-gray-600 mb-2">
+          Find which campus is close by you
+        </p>
+        <a href="#" class="text-blue-600 text-sm font-medium">
+          Read more
+        </a>
+      </div>
+    </div>
 
-</div>
+    <!-- card 3 -->
+    <div class="flex flex-col md:flex-row gap-4 bg-gray-200 p-4 items-stretch">
+      <div class="md:basis-[35%]">
+        <img src="/information-guest-lecture-mobile.jpg" class="md:hidden w-full mb-4">
+        <img src="/information-guest-lecture.jpg" class="hidden md:block w-full h-full object-cover">
+      </div>
+
+      <div class="md:basis-[65%]">
+        <h3 class="font-bold text-lg md:text-xl text-gray-800 mb-2">
+          Special guest lecture
+        </h3>
+        <p class="text-base text-gray-600 mb-2">
+          Join a keynote with Oliver Sack
+        </p>
+        <a href="#" class="text-blue-600 text-sm font-medium">
+          Read more
+        </a>
+      </div>
+    </div>
 
   </div>
 
-  <!-- card 2 -->
-<div class="flex flex-col md:flex-row gap-4 bg-gray-200 p-4 items-stretch">
+</section> 
 
-  <div class="md:basis-[35%]">
-    <img src="/information-campus-mobile.jpg"
-         class="md:hidden w-full mb-4">
-    <img src="/information-campus.jpg"
-         class="hidden md:block w-full h-full object-cover">
+<!-- ================= COURSES ================= -->
+ <!-- == ในส่วนของ COURSES มายจะแบ่งเป็น 6 card ใน 1 container โดยที่เมื่อแสดง version mobile แล้วจะต้องแสดงผลเป็นแถบปุ่มสีเทาและแสดงผลด้วยชื่อแทน ไม่มีรูปและรายละเอียด == -->
+ <!-- == โดยจะสร้าง BG ขึ้นมาก่อน และใส่ 6 card ลงไปแต่ซ่อนการแสดงผลแบบรูปเมื่อใช้ version mobile   == -->
+
+<!-- ================= COURSES ================= -->
+<section class="bg-[#F5F5F5] md:bg-[#D8D8D8] px-6 md:px-[72px] py-8 md:py-16">
+
+  <h2 class="text-4xl font-bold text-center mb-4 md:mb-12">
+    Start learning
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 max-w-[1200px] mx-auto">
+
+    <!-- card 1 -->
+    <div class="bg-gray-300 md:bg-white p-4 md:p-0">
+      <img src="/course-software.jpg" class="hidden md:block w-full">
+      <div class="md:p-4 md:pb-8">
+        <h4 class="font-bold text-xl mb-2">Software engineering</h4>
+        <p class="hidden md:block text-xs text-gray-400 uppercase mb-2">Courses</p>
+        <p class="hidden md:block text-sm text-gray-500">
+          Web Development, Mobile Development, IoT, APIs
+        </p>
+      </div>
+    </div>
+
+    <!-- card 2 -->
+    <div class="bg-gray-300 md:bg-white p-4 md:p-0">
+      <img src="/course-computer-art.jpg" class="hidden md:block w-full">
+      <div class="md:p-4 md:pb-8">
+        <h4 class="font-bold text-xl mb-2">Computer art</h4>
+        <p class="hidden md:block text-xs text-gray-400 uppercase mb-2">Courses</p>
+        <p class="hidden md:block text-sm text-gray-500">
+          Imaging & Design, Web Design, Motion Graphics & Visual Effects
+        </p>
+      </div>
+    </div>
+
+    <!-- card 3 -->
+    <div class="bg-gray-300 md:bg-white p-4 md:p-0">
+      <img src="/course-design.jpg" class="hidden md:block w-full">
+      <div class="md:p-4 md:pb-8">
+        <h4 class="font-bold text-xl mb-2">Design</h4>
+        <p class="hidden md:block text-xs text-gray-400 uppercase mb-2">Courses</p>
+        <p class="hidden md:block text-sm text-gray-500">
+          User Experience Design, User Research, Visual Design
+        </p>
+      </div>
+    </div>
+     
+    <!-- card 4 -->
+    <div class="bg-gray-300 md:bg-white p-4 md:p-0">
+      <img src="/course-data.jpg" class="hidden md:block w-full">
+      <div class="md:p-4 md:pb-8 space-y-2">
+        <h4 class="font-bold text-xl">Data</h4>
+        <p class="hidden md:block text-xs text-gray-400 uppercase">Courses</p>
+        <p class="hidden md:block text-sm text-gray-500">
+          Data Science, Big Data, SQL, Data Visualization
+        </p>
+      </div>
+    </div>
+    <!-- card 5 -->
+    <div class="bg-gray-300 md:bg-white p-4 md:p-0">
+      <img src="/course-business.jpg" class="hidden md:block w-full">
+      <div class="md:p-4 md:pb-8 space-y-2">
+        <h4 class="font-bold text-xl">Business</h4>
+        <p class="hidden md:block text-xs text-gray-400 uppercase">Courses</p>
+        <p class="hidden md:block text-sm text-gray-500">
+          Product Development, Business Development, Startup
+        </p>
+      </div>
+    </div>
+
+    <!-- card 6 -->
+    <div class="bg-gray-300 md:bg-white p-4 md:p-0">
+      <img src="/course-marketing.jpg" class="hidden md:block w-full">
+      <div class="md:p-4 md:pb-8 space-y-2">
+        <h4 class="font-bold text-xl">Marketing</h4>
+        <p class="hidden md:block text-xs text-gray-400 uppercase">Courses</p>
+        <p class="hidden md:block text-sm text-gray-500">
+          Analytics, Content Marketing, Mobile Marketing
+        </p>
+      </div>
+    </div>
+
   </div>
 
-  <div class="md:basis-[65%]">
-    <h3 class="font-bold text-lg md:text-xl text-gray-800 mb-2">
-      Our campus
-    </h3>
-    <p class="text-base text-gray-600 mb-2">
-      Find which campus is close by you
-    </p>
-    <a href="#" class="text-blue-600 text-sm font-medium">
-      Read more
-    </a>
-  </div>
-
-</div>
-
-<!-- card 3 -->
-<div class="flex flex-col md:flex-row gap-4 bg-gray-200 p-4 items-stretch">
-
-  <div class="md:basis-[35%]">
-    <img src="/information-guest-lecture-mobile.jpg"
-         class="md:hidden w-full mb-4">
-    <img src="/information-guest-lecture.jpg"
-         class="hidden md:block w-full h-full object-cover">
-  </div>
-
-  <div class="md:basis-[65%]">
-    <h3 class="font-bold text-lg md:text-xl text-gray-800 mb-2">
-      Special guest lecture
-    </h3>
-    <p class="text-base text-gray-600 mb-2">
-      Join a keynote with Oliver Sack
-    </p>
-    <a href="#" class="text-blue-600 text-sm font-medium">
-      Read more
-    </a>
-  </div>
-
-</div>
+</section>
