@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>08-my-colmar</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Colmar Academy</title>
 </head>
-<body>
-    
-</body>
-</html>
+
+<!-- == มายจะใช้ Tailwind ในการสร้างเว็บครั้งนีโดยแยกสัดส่วนของเว็บจากด้านบนลงไปล่าง == -->
+<!-- == หลักคิดแรกเลยคือทำส่วนหัวแรกก่อนก็คือ header โดยเลือกสี BG และ text ใกล้เคียง == -->
+<!-- == และที่เห็นสำคัญเลยคือ ตอนเป็น desktop จะเห็นหมวดเมนูเป็นตัวหนังสือ แต่ตอนดึงเข้าจะต้องเป็นไอคอน == -->
+<!-- == ซึ่งต้องจัดระยะห่างของ padding และ flex ให้ถูกต้องตามเลย์เอ้า == -->
+<!-- == สำหรับตัว HEADER ต้องสร้าง box ใน container โดยใช้ flex แยกออกเป็นลูก 2 ฝั่ง == -->
+
+<body class="bg-gray-100 text-gray-800">
+
+<!-- ================= HEADER ================= -->
+<header class="bg-white">
+  <div class="flex items-center px-6 py-4">
+
+    <!-- logo (desktop) -->
+    <div class="hidden md:flex items-center gap-2">
+      <img src="/ic-logo.svg" class="h-8" />
+      <span class="font-bold">
+        COLMAR <span class="text-gray-400">ACADEMY</span>
+      </span>
+    </div>
+
+    <!-- desktop menu -->
+    <nav class="hidden md:flex gap-6 ml-auto">
+      <a href="#">On campus</a>
+      <a href="#">Online</a>
+      <a href="#">For companies</a>
+      <a href="#">Sign in</a>
+    </nav>
+
+    <!-- mobile menu -->
+    <nav class="md:hidden w-full">
+      <ul class="flex justify-center items-center gap-16">
+        <li><img src="/ic-logo.svg" class="h-6"></li>
+        <li><img src="/ic-on-campus.svg" class="h-6"></li>
+        <li><img src="/ic-online.svg" class="h-6"></li>
+        <li><img src="/ic-login.svg" class="h-6"></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
