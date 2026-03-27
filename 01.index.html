@@ -38,10 +38,10 @@
     <!-- mobile menu -->
     <nav class="md:hidden w-full">
       <ul class="flex justify-center items-center gap-16">
-        <li><img src="/ic-logo.svg" class="h-6"></li>
-        <li><img src="/ic-on-campus.svg" class="h-6"></li>
-        <li><img src="/ic-online.svg" class="h-6"></li>
-        <li><img src="/ic-login.svg" class="h-6"></li>
+        <li><img src="/ic-logo.svg" class="h-10"></li>
+        <li><img src="/ic-on-campus.svg" class="h-10"></li>
+        <li><img src="/ic-online.svg" class="h-10"></li>
+        <li><img src="/ic-login.svg" class="h-10"></li>
       </ul>
     </nav>
 
@@ -56,7 +56,7 @@
 
 
 <!-- ================= HERO ================= -->
-<section class="flex flex-col md:flex-row bg-gray-200 px-6 py-8 md:py-8">
+<section class="flex flex-col md:flex-row bg-gray-200 px-6 md:py-8">
 
   <!-- LEFT (60%) -->
   <div class="md:basis-3/5">
@@ -82,3 +82,104 @@
   </div>
 
 </section>
+
+<!-- ================= INFORMATION ================= -->
+<!-- == ในส่วนของ INFORMATION จะมีมายจะตั้งค่ารูปเป็น 60% ระยะขอบขวา 24px ด้านซ้ายจะมี 1 container ขวา 1 container 3 items == -->
+<!-- == เวลาแสดงผลทาง mobile จะต้องซ่อน container ด้านซ้าย และรูปฝั่ง ขวา 3 items จะต้องเป็นภาพยาว และมีลิ้งค์ Read more == -->
+
+
+<!-- ================= INFORMATION ================= -->
+<section class="bg-white flex flex-col md:flex-row px-6 py-8 md:py-16">
+
+  <!-- LEFT (60%) -->
+  <div class="hidden md:block md:basis-3/5 border-r border-gray-200">
+    <img src="/information-main.jpg" class="w-full" />
+
+    <h2 class="text-2xl font-bold mt-8 mb-4">
+      It doesn’t hurt to keep practicing
+    </h2>
+
+    <p class="text-gray-600">
+      "Curabitur Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo mollitia laudantium in optio repudiandae ipsam praesentium aut odit reiciendis velit, iusto voluptas. Eos perspiciatis at placeat, dignissimos non ratione porro quos, magnam quae, laboriosam aut est sed voluptatem optio totam qui quisquam eum fuga? Quidem corrupti maiores officiis adipisci."
+    </p>
+
+    <p class="mt-6 font-semibold text-sm">
+      Emanuel, Sr Strategist at Hiring.com
+    </p>
+  </div>
+
+  <!-- RIGHT (40%) -->
+<div class="md:basis-2/5 flex flex-col gap-16 md:gap-6 md:pl-6">
+
+  <!-- card 1 -->
+  <div class="flex flex-col md:flex-row gap-4 bg-gray-200 p-4 items-stretch">
+
+    <div class="md:basis-[35%]">
+      <img src="/information-orientation-mobile.jpg"
+           class="md:hidden w-full mb-4">
+      <img src="/information-orientation.jpg"
+           class="hidden md:block w-full h-full object-cover">
+    </div>
+
+    <div class="md:basis-[65%]">
+     <h3 class="font-bold text-lg md:text-xl text-gray-800 mb-2">
+    Orientation date</h3>
+      <p class="text-base text-gray-600 mb-2">
+    Tue 10/11 & Wed 10/12: 8am-3pm
+  </p>
+
+  <a href="#" class="text-blue-600 text-sm font-medium">
+    Read more
+  </a>
+
+</div>
+
+  </div>
+
+  <!-- card 2 -->
+<div class="flex flex-col md:flex-row gap-4 bg-gray-200 p-4 items-stretch">
+
+  <div class="md:basis-[35%]">
+    <img src="/information-campus-mobile.jpg"
+         class="md:hidden w-full mb-4">
+    <img src="/information-campus.jpg"
+         class="hidden md:block w-full h-full object-cover">
+  </div>
+
+  <div class="md:basis-[65%]">
+    <h3 class="font-bold text-lg md:text-xl text-gray-800 mb-2">
+      Our campus
+    </h3>
+    <p class="text-base text-gray-600 mb-2">
+      Find which campus is close by you
+    </p>
+    <a href="#" class="text-blue-600 text-sm font-medium">
+      Read more
+    </a>
+  </div>
+
+</div>
+
+<!-- card 3 -->
+<div class="flex flex-col md:flex-row gap-4 bg-gray-200 p-4 items-stretch">
+
+  <div class="md:basis-[35%]">
+    <img src="/information-guest-lecture-mobile.jpg"
+         class="md:hidden w-full mb-4">
+    <img src="/information-guest-lecture.jpg"
+         class="hidden md:block w-full h-full object-cover">
+  </div>
+
+  <div class="md:basis-[65%]">
+    <h3 class="font-bold text-lg md:text-xl text-gray-800 mb-2">
+      Special guest lecture
+    </h3>
+    <p class="text-base text-gray-600 mb-2">
+      Join a keynote with Oliver Sack
+    </p>
+    <a href="#" class="text-blue-600 text-sm font-medium">
+      Read more
+    </a>
+  </div>
+
+</div>
